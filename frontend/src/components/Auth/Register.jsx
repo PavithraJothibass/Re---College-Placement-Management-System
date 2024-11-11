@@ -25,7 +25,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://re-college-placement-management-system.onrender.com/api/v1/user/register",
+        "https://re-college-placement-management-system-1.onrender.com/api/v1/user/register",
         { name, phone, email, role, password },
         {
           headers: {
