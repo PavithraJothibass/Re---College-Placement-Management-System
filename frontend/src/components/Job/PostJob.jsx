@@ -31,7 +31,7 @@ const PostJob = () => {
     }
     await axios
       .post(
-        "https://re-college-placement-management-system-2.onrender.com/api/v1/job/post",
+        "https://re-college-placement-management-system.onrender.com/api/v1/job/post",
         fixedSalary.length >= 4
           ? {
               title,
