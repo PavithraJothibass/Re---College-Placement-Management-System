@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       const response = await axios.get(
-        "https://re-college-placement-management-system-1.onrender.com/api/v1/user/logout",
+        "https://re-college-placement-management-system-2.onrender.com/api/v1/user/logout",
         {
           withCredentials: true,
         }
