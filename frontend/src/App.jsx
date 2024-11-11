@@ -24,7 +24,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://re-college-placement-management-system.onrender.com/api/v1/user/getuser",
+          "https://re-college-placement-management-system-1.onrender.com/api/v1/user/getuser",
           {
             withCredentials: true,
           }
