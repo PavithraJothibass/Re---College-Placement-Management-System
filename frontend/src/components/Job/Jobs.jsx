@@ -10,7 +10,7 @@ const Jobs = () => {
   useEffect(() => {
     try {
       axios
-        .get("https://re-college-placement-management-system.onrender.com/api/v1/job/getall", {
+        .get("https://re-college-placement-management-system-1.onrender.com/api/v1/job/getall", {
           withCredentials: true,
         })
         .then((res) => {
