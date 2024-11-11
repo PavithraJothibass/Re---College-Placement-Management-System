@@ -23,10 +23,10 @@ A full-stack web application designed to streamline the placement process for co
 
 ## Tech Stack
 - **Frontend**: React.js
-- **Backend**: Node.js, Express.js
+- **Backend**: Node.js
 - **Database**: MongoDB
 - **Deployment**:
-  - Frontend: Netlify
+  - Frontend: Vercel
   - Backend: Render
 
 ## Setup
