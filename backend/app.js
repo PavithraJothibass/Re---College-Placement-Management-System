@@ -14,7 +14,7 @@ config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: [process.env.'https://re-collegeplacementmanagementsystem.netlify.app'],
+    origin: 'https://re-collegeplacementmanagementsystem.netlify.app',
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
