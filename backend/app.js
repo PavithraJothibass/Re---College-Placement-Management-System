@@ -13,9 +13,7 @@ const app = express();
 config({ path: "./config/config.env" });
 
 const allowedOrigins = [
-  'https://project-check-czqlw3muc-jainshrey1110gmailcoms-projects.vercel.app',
-  'https://project-check-2usy5akn8-jainshrey1110gmailcoms-projects.vercel.app',
-  'https://project-check-eight.vercel.app'
+  'https://re-college-placement-management-system.vercel.app'
 ];
 
 app.use(
