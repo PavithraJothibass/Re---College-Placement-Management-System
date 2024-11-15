@@ -12,13 +12,27 @@ import fileUpload from "express-fileupload";
 const app = express();
 config({ path: "./config/config.env" });
 
+const allowedOrigins = [
+  'https://project-check-czqlw3muc-jainshrey1110gmailcoms-projects.vercel.app',
+  'https://project-check-2usy5akn8-jainshrey1110gmailcoms-projects.vercel.app',
+  'https://project-check-eight.vercel.app'
+];
+
 app.use(
   cors({
-    origin: 'https://re-collegeplacementmanagementsystem.netlify.app',
-    method: ["GET", "POST", "DELETE", "PUT"],
+    origin: function (origin, callback) {
+      if (allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
 );
+
+
 
 app.use(cookieParser());
 app.use(express.json());
